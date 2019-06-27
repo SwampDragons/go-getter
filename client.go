@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	urlhelper "github.com/hashicorp/go-getter/helper/url"
+	urlhelper "github.com/SwampDragons/go-getter/helper/url"
 	safetemp "github.com/hashicorp/go-safetemp"
 )
 
@@ -19,7 +19,7 @@ import (
 // Using a client directly allows more fine-grained control over how downloading
 // is done, as well as customizing the protocols supported.
 type Client struct {
- 	// Ctx for cancellation
+	// Ctx for cancellation
 	Ctx context.Context
 
 	// Src is the source URL to get.

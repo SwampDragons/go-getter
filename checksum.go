@@ -16,7 +16,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	urlhelper "github.com/hashicorp/go-getter/helper/url"
+	urlhelper "github.com/SwampDragons/go-getter/helper/url"
 )
 
 // fileChecksum helps verifying the checksum for a file.
@@ -190,7 +190,7 @@ func newChecksumFromValue(checksumValue, filename string) (*fileChecksum, error)
 //
 // checksumsFromFile will only return checksums for files that match file
 // behind src
-func (c *Client) checksumFromFile(checksumFile string, src *url.URL) (*fileChecksum, error) {
+func (c *Client) ChecksumFromFile(checksumFile string, src *url.URL) (*fileChecksum, error) {
 	checksumFileURL, err := urlhelper.Parse(checksumFile)
 	if err != nil {
 		return nil, err

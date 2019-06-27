@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	urlhelper "github.com/hashicorp/go-getter/helper/url"
+	urlhelper "github.com/SwampDragons/go-getter/helper/url"
 )
 
 var testHasGit bool
@@ -379,7 +379,6 @@ func TestGitGetter_sshExplicitPort(t *testing.T) {
 		t.Fatalf("err: %s", err)
 	}
 }
-
 
 func TestGitGetter_sshSCPStyleInvalidScheme(t *testing.T) {
 	if !testHasGit {

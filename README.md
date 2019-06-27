@@ -38,7 +38,7 @@ $ go get github.com/hashicorp/go-getter
 go-getter also has a command you can use to test URL strings:
 
 ```
-$ go install github.com/hashicorp/go-getter/cmd/go-getter
+$ go install github.com/SwampDragons/go-getter/cmd/go-getter
 ...
 
 $ go-getter github.com/foo/bar ./foo
@@ -175,7 +175,7 @@ checksum string. Examples:
 ```
 ./foo.txt?checksum=file:./foo.txt.sha256sum
 ```
- 
+
 When checksumming from a file - ex: with `checksum=file:url` - go-getter will
 get the file linked in the URL after `file:` using the same configuration. For
 example, in `file:http://releases.ubuntu.com/cosmic/MD5SUMS` go-getter will
@@ -276,7 +276,7 @@ None
     from a private key file on disk, you would run `base64 -w0 <file>`.
 
     **Note**: Git 2.3+ is required to use this feature.
-  
+
   * `depth` - The Git clone depth. The provided number specifies the last `n`
     revisions to clone from the repository.
 
